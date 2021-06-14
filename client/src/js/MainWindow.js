@@ -22,7 +22,7 @@ function MainWindow({ startCall, clientId }) {
         <div class="col-md-6">
           <h1  class="text-primary">Dela!</h1>
           <h3><em>Share vitals with your doctor during online consultation.  We deliver DelaBox* to your home for rental.</em></h3>
-          <h4><em>*DelaBox is a box which has computer tablet and telemedicine equipment, which are ready to use. 
+          <h4><em>*DelaBox is a case which has a computer tablet connected to telemedicine equipment, which is ready to use. 
             Patient just needs to share their personal code on the box to the doctor during consultation.
             These telemedicine equipment are specially made for self-use, without the help of any healthcare professional.</em></h4>
           <a class="btn btn-primary btn-xl" href="#about">Order DelaBox</a>
