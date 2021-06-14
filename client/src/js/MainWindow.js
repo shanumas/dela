@@ -25,7 +25,7 @@ function MainWindow({ startCall, clientId }) {
           <h4><em>*DelaBox is a case which has a computer tablet connected to telemedicine equipment, which is ready to use. 
             Patient just needs to share their personal code on the box to the doctor during consultation.
             These telemedicine equipment are specially made for self-use, without the help of any healthcare professional.</em></h4>
-          <h5>We start delivery in Göteborg city starting from 1st-July.  Delivery in Stockholm will start from 15th-August.</h5>
+          <h5>We start delivery in Göteborg city on 1-July-2021.  Delivery in Stockholm will start from 15-August-2021.</h5>
           <a class="btn btn-primary btn-xl" href="#about">Order DelaBox</a>
         </div>
         <div class="col-md-6">
