@@ -20,9 +20,12 @@ function MainWindow({ startCall, clientId }) {
     <div className="container-fluid main-window">
       <div class="row content-section new-section super-background bottom-padding">
         <div class="col-md-6">
-          <h1  class="text-primary">Dela live!</h1>
-          <h3><em>Share vitals with your doctor during online consultation.  We deliver telemedicine equipment to your home for rental.</em></h3>
-          <a class="btn btn-primary btn-xl" href="#about">Order equipment</a>
+          <h1  class="text-primary">Dela!</h1>
+          <h3><em>Share vitals with your doctor during online consultation.  We deliver DelaBox* to your home for rental.</em></h3>
+          <h4><em>*DelaBox is a box which has computer tablet and telemedicine equipment, which are ready to use. 
+            Patient just needs to share their personal code on the box to the doctor during consultation.
+            These telemedicine equipment are specially made for self-use, without the help of any healthcare professional.</em></h4>
+          <a class="btn btn-primary btn-xl" href="#about">Order DelaBox</a>
         </div>
         <div class="col-md-6">
           <img src={steth} />
@@ -37,12 +40,12 @@ function MainWindow({ startCall, clientId }) {
               Doctor
             </h3>
             <ul class="fa-ul p-2 h4">
-              <li><i class="fa-li fa fa-check"></i>Book meeting with your patient.</li>
-              <li><i class="fa-li fa fa-check"></i>Use our api to book medical equipment to patient's address.</li>
-              <li><i class="fa-li fa fa-check"></i>We deliver equipment to patient's home.</li>
-              <li><i class="fa-li fa fa-check"></i>Equipment are self-usable during consultation.</li>
-              <li><i class="fa-li fa fa-check"></i>Data automatically streamed to the doctor.</li>
-              <li><i class="fa-li fa fa-check"></i>We collect equipment after use.</li>
+              <li><i class="blue fa-li fa fa-check"></i>Book meeting with your patient.</li>
+              <li><i class="blue fa-li fa fa-check"></i>Use our api to book medical equipment to patient's address.</li>
+              <li><i class="blue fa-li fa fa-check"></i>We deliver equipment to patient's home.</li>
+              <li><i class="blue fa-li fa fa-check"></i>Equipment are self-usable during consultation.</li>
+              <li><i class="blue fa-li fa fa-check"></i>Data automatically streamed to the doctor.</li>
+              <li><i class="blue fa-li fa fa-check"></i>We collect equipment after use.</li>
             </ul>
           </div>
           <div class="col-md-6">
@@ -50,12 +53,12 @@ function MainWindow({ startCall, clientId }) {
               Patient
             </h3>
             <ul class="fa-ul p-2 h4">
-              <li><i class="fa-li fa fa-check"></i>Book your online doctor.</li>
-              <li><i class="fa-li fa fa-check"></i>Visit our site and Order equipment as suggested by doctor.</li>
-              <li><i class="fa-li fa fa-check"></i>We deliver equipment to your home.</li>
-              <li><i class="fa-li fa fa-check"></i>Equipment are self-usable during consultation.</li>
-              <li><i class="fa-li fa fa-check"></i>Data automatically streamed to the doctor.</li>
-              <li><i class="fa-li fa fa-check"></i>We collect equipment after use.</li>
+              <li><i class="blue fa-li fa fa-check"></i>Book your online doctor.</li>
+              <li><i class="blue fa-li fa fa-check"></i>Visit our site and Order equipment as suggested by doctor.</li>
+              <li><i class="blue fa-li fa fa-check"></i>We deliver equipment to your home.</li>
+              <li><i class="blue fa-li fa fa-check"></i>Equipment are self-usable during consultation.</li>
+              <li><i class="blue fa-li fa fa-check"></i>Data automatically streamed to the doctor.</li>
+              <li><i class="blue fa-li fa fa-check"></i>We collect equipment after use.</li>
             </ul>
           </div>
         </div>
@@ -107,30 +110,30 @@ function MainWindow({ startCall, clientId }) {
       <div class="row content-section bg-primary text-white text-center" id="services">
         <div class="container px-4 px-lg-5">
           <div class="content-section-heading">
-            <h3 class="text-secondary mb-0">Telemedicine equipment</h3>
-            <h2 class="mb-5">What We Deliver</h2>
+            <h2 class="text-secondary mb-0 yellow">Telemedicine equipment</h2>
+            <h3 class="mb-5">What We Deliver</h3>
           </div>
           <div class="row gx-4 gx-lg-5">
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa fa-stethoscope"></i></span>
-              <h4><strong>RNK USB stethoscope</strong></h4>
+              <h4 class="yellow"><strong>RNK USB stethoscope</strong></h4>
               <h5 class="text-faded mb-0">European MDD and EN 13485 certified</h5>
             </div>
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa fa-medkit"></i></span>
-              <h4><strong>12 lead ECG</strong></h4>
+              <h4 class="yellow"><strong>12 lead ECG</strong></h4>
               <h5 class="text-faded mb-0">CE certified and EMA monitored</h5>
             </div>
             <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
               <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa fa-heart"></i></span>
-              <h4><strong>Blood Pressure Monitor</strong></h4>
+              <h4 class="yellow"><strong>Blood Pressure Monitor</strong></h4>
               <h5 class="text-faded mb-0">
                 Omron
               </h5>
             </div>
             <div class="col-lg-3 col-md-6">
               <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa fa-camera-retro"></i></span>
-              <h4><strong>Teleconsultation camera</strong></h4>
+              <h4 class="yellow"><strong>Teleconsultation camera</strong></h4>
               <h5 class="text-faded mb-0">ENT, Dermatology, Intraoral, Wound</h5>
             </div>
           </div>
