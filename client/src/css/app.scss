@@ -71,7 +71,7 @@ h1{
 	/*The background extends to the outside edge of the padding. No background is drawn beneath the border.*/
 	background-clip: padding-box;
 
-	border: solid 8px transparent;
+	border: solid 3px transparent;
 	border-radius: 0.8rem;
 
 	&:before {
@@ -82,9 +82,9 @@ h1{
 		bottom: 0;
 		left: 0;
 		z-index: -1;
-		margin: -8px; /* same as border width */
+		margin: -3px; /* same as border width */
 		border-radius: inherit; /* inherit container box's radius */
-		background: linear-gradient(to left, turquoise, greenyellow);
+		background: linear-gradient(to left, #0275d8, #f2d900);
 	}
 }
 
@@ -93,7 +93,25 @@ h1{
 }
 
 .super-background{
-  background: url('../img/bg-masthead.jpg');
+  //background: url('https://source.unsplash.com/YIy1cd3xN4w/2560x1440');
+  background-color: #f2d900;
+}
+
+.bottom-padding{
+  padding-bottom: 10px;
+  padding-left: 5vw;
+}
+
+.steth{
+  background-image: url('../img/steth.png')
+}
+
+.white-text{
+  text-decoration-color: white
+}
+
+footer{
+  color: white
 }
 
 

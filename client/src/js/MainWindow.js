@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import img from '../img/equipment.png';
+import steth from '../img/steth.png';
+import ecg from '../img/ecg.png';
+import omron from '../img/omron.png';
 
 function MainWindow({ startCall, clientId }) {
   const [friendID, setFriendID] = useState(null);
@@ -16,87 +18,91 @@ function MainWindow({ startCall, clientId }) {
 
   return (
     <div className="container-fluid main-window">
-      <div class="row content-section new-section text-center super-background">
-        <h1>Dela live!</h1>
-        <h2><em>Share vitals with your doctor during online consultation!</em></h2>
+      <div class="row content-section new-section super-background bottom-padding">
+        <div class="col-md-6">
+          <h1  class="text-primary">Dela live!</h1>
+          <h3><em>Share vitals with your doctor during online consultation.  We deliver telemedicine equipment to your home for rental.</em></h3>
+          <a class="btn btn-primary btn-xl" href="#about">Order equipment</a>
+        </div>
+        <div class="col-md-6">
+          <img src={steth} />
+          <img src={ecg} />
+          <img src={omron} />
+        </div>
       </div>
       <div class="row text-center new-section content-section">
         <div class="container">
-        <div class="col-md-6 separation">
-          <h3>
-            Doctor
-          </h3>
-          <ul class="fa-ul p-2 h4">
-            <li><i class="fa-li fa fa-check"></i>Book meeting with your patient</li>
-            <li><i class="fa-li fa fa-check"></i>Use our api to book medical equipment to patient's address</li>
-            <li><i class="fa-li fa fa-check"></i>We deliver equipment to patient's home</li>
-            <li><i class="fa-li fa fa-check"></i>Equipment are self-usable during consultation</li>
-            <li><i class="fa-li fa fa-check"></i>Data automatically streamed to the doctor</li>
-            <li><i class="fa-li fa fa-check"></i>We collect equipment after use</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h3>
-            Patient
-          </h3>
-          <ul class="fa-ul p-2 h4">
-            <li><i class="fa-li fa fa-check"></i>Book your online doctor</li>
-            <li><i class="fa-li fa fa-check"></i>Visit our site and Order equipment suggested by doctor</li>
-            <li><i class="fa-li fa fa-check"></i>We deliver equipment to your home</li>
-            <li><i class="fa-li fa fa-check"></i>Equipment are self-usable during consultation</li>
-            <li><i class="fa-li fa fa-check"></i>Data automatically streamed to the doctor</li>
-            <li><i class="fa-li fa fa-check"></i>We collect equipment after use</li>
-          </ul>
-        </div>
+          <div class="col-md-6 separation">
+            <h3 class="text-primary">
+              Doctor
+            </h3>
+            <ul class="fa-ul p-2 h4">
+              <li><i class="fa-li fa fa-check"></i>Book meeting with your patient.</li>
+              <li><i class="fa-li fa fa-check"></i>Use our api to book medical equipment to patient's address.</li>
+              <li><i class="fa-li fa fa-check"></i>We deliver equipment to patient's home.</li>
+              <li><i class="fa-li fa fa-check"></i>Equipment are self-usable during consultation.</li>
+              <li><i class="fa-li fa fa-check"></i>Data automatically streamed to the doctor.</li>
+              <li><i class="fa-li fa fa-check"></i>We collect equipment after use.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3  class="text-primary">
+              Patient
+            </h3>
+            <ul class="fa-ul p-2 h4">
+              <li><i class="fa-li fa fa-check"></i>Book your online doctor.</li>
+              <li><i class="fa-li fa fa-check"></i>Visit our site and Order equipment as suggested by doctor.</li>
+              <li><i class="fa-li fa fa-check"></i>We deliver equipment to your home.</li>
+              <li><i class="fa-li fa fa-check"></i>Equipment are self-usable during consultation.</li>
+              <li><i class="fa-li fa fa-check"></i>Data automatically streamed to the doctor.</li>
+              <li><i class="fa-li fa fa-check"></i>We collect equipment after use.</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="row new-section">
         <div class="container">
-        <div class="col-xs-6">
-          <div class="boxed">
-            <h4>Enter IDs to connect to a Patient
-              <br></br>
-              <input
-                type="text"
-                className="txt-clientId"
-                spellCheck={false}
-                placeholder="Doctor ID"
-                onChange={(event) => setFriendID(event.target.value)}
-              />
-              <input
-                type="text"
-                className="txt-clientId"
-                spellCheck={false}
-                placeholder="Patient ID"
-                onChange={(event) => setFriendID(event.target.value)}
-              />
-              <button
-                type="button"
-                className="btn-action fa fa-phone"
-                onClick={callWithVideo(false)}
-              />
-            </h4>
+          <div class="col-xs-6">
+            <div class="boxed">
+              <h4>Enter IDs to connect to a Patient
+                <br></br>
+                <input
+                  type="text"
+                  className="txt-clientId"
+                  spellCheck={false}
+                  placeholder="Doctor ID"
+                  onChange={(event) => setFriendID(event.target.value)}
+                />
+                <input
+                  type="text"
+                  className="txt-clientId"
+                  spellCheck={false}
+                  placeholder="Patient ID"
+                  onChange={(event) => setFriendID(event.target.value)}
+                />
+                <button
+                  type="button"
+                  className="btn-action fa fa-phone"
+                  onClick={callWithVideo(false)}
+                />
+              </h4>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="boxed">
+              <h4>Share your id with the doctor to connect
+                <br></br>
+                Your id is
+                <input
+                  type="text"
+                  className="txt-clientId"
+                  defaultValue={clientId}
+                  readOnly
+                />
+              </h4>
+            </div>
           </div>
         </div>
-        <div class="col-xs-6">
-          <div class="boxed">
-            <h4>Share your id with the doctor to connect
-              <br></br>
-              Your id is
-              <input
-                type="text"
-                className="txt-clientId"
-                defaultValue={clientId}
-                readOnly
-              />
-            </h4>
-          </div>
-        </div>
-        </div>
-      </div>
-
-      <div class="row text-center new-section">
-        <a class="btn btn-primary btn-xl" href="#about">Order equipment</a>
       </div>
       <div class="row content-section bg-primary text-white text-center" id="services">
         <div class="container px-4 px-lg-5">
@@ -119,7 +125,7 @@ function MainWindow({ startCall, clientId }) {
               <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa fa-heart"></i></span>
               <h4><strong>Blood Pressure Monitor</strong></h4>
               <h5 class="text-faded mb-0">
-                OMRON
+                Omron
               </h5>
             </div>
             <div class="col-lg-3 col-md-6">
