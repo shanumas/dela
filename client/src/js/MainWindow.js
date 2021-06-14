@@ -63,9 +63,9 @@ function MainWindow({ startCall, clientId }) {
           </div>
         </div>
       </div>
-      <div class="row new-section">
+      <div class="row">
         <div class="container">
-          <div class="col-xs-6">
+          <div class="col-md-6  new-section">
             <div class="boxed">
               <h4>Enter IDs to connect to a Patient
                 <br></br>
@@ -91,7 +91,7 @@ function MainWindow({ startCall, clientId }) {
               </h4>
             </div>
           </div>
-          <div class="col-xs-6">
+          <div class="col-md-6  new-section">
             <div class="boxed">
               <h4>Share your id with the doctor to connect
                 <br></br>
